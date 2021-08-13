@@ -52,7 +52,9 @@ body {
 }
 
 @media screen and (min-width: 400px) {
-  margin: 5px 68px;
+  .card-p {
+    margin: 5px 68px;
+  }
 }
 
 .card__plan {
