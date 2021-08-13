@@ -21,7 +21,7 @@ body {
 .card {
   background-color: #fff;
   height: 650px;
-  width: 400px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,6 +29,12 @@ body {
   /* flex-wrap: wrap; */
   overflow: hidden;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 400px) {
+  .card {
+    width: 400px;
+  }
 }
 
 .card h1 {
@@ -40,9 +46,13 @@ body {
 .card p {
   font-size: 16px;
   text-align: center;
-  margin: 5px 68px;
+  margin: 5px 30px;
   color: rgb(124, 124, 124);
   line-height: 25px;
+}
+
+@media screen and (min-width: 400px) {
+  margin: 5px 68px;
 }
 
 .card__plan {
@@ -56,8 +66,15 @@ body {
 }
 
 .plan__text p {
-  margin: 0 60px 0 0;
-  width: 150px;
+  margin: 0 10px 0 0;
+  width: 120px;
+}
+
+@media screen and (min-width: 400px) {
+  .plan__text {
+    margin: 0 60px 0 0;
+    width: 150px;
+  }
 }
 
 .plan__text p:first-child {
